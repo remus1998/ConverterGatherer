@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <link rel="stylesheet" href="/ConverterGatherer/css/main.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="/Proba/main.css" />
-    <script src="/Proba/main.js"></script>
-    <title>Converter Gatherer</title>
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .swiper {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -280px;
+        margin-top: -250px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Converter Gatherer</h1>
+    <h1>Converters</h1>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="https://remus1998.github.io/grafika-beadand-/">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </a>
+          <a href="https://remus1998.github.io/grafika-beadand-/"
+            ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
+          /></a>
         </div>
         <div class="swiper-slide">
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -42,5 +78,21 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
