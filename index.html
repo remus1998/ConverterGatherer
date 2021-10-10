@@ -47,6 +47,24 @@
         background-size: cover;
       }
 
+      .swiper-slide .hdn1 {
+        visibility: hidden;
+        width: 120px;
+        background-color: lightgray;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 105%;
+      }
+      .swiper-slide:hover .hdn1 {
+        visibility: visible;
+      }
+
       .swiper-slide img {
         display: block;
         width: 100%;
@@ -60,12 +78,20 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="https://remus1998.github.io/grafika-beadand-/"
-            ><img src="https://swiperjs.com/demos/images/nature-1.jpg"
+          <span class="hdn1">This page is the temperature Converter</span>
+          <a
+            href="https://remus1998.github.io/grafika-beadand-/"
+            target="_blank"
+          >
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg"
           /></a>
         </div>
         <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <a
+            href="https://remus1998.github.io/grafika-beadand-/length.html"
+            target="_blank"
+            ><img src="https://swiperjs.com/demos/images/nature-2.jpg"
+          /></a>
         </div>
         <div class="swiper-slide">
           <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
