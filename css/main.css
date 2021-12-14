@@ -42,7 +42,11 @@ header img {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: gray;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
 }
 #length,
 #weight {
