@@ -7,66 +7,63 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/ConverterGatherer/css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body>
     <header>
       <h1>Converters</h1>
-      <img src="/ConverterGatherer/img/logo.png" alt="" />
+      <img src="/img/logo.png" alt="" />
     </header>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <span class="hdn1">This page is the temperature Converter</span>
+    <div id="main">
+      <div id="mainContainer">
+        <div id="contentContainer">
           <a href="https://remus1998.github.io/grafika-beadand-/index.html">
-            <img src="/ConverterGatherer/img/temperautre2.png"
-          /></a>
-        </div>
-        <div class="swiper-slide" id="length">
-          <span class="hdn1">This page is the distance Converter</span>
-          <a href="https://rolandhorvath.github.io/measure/"
-            ><img src="/ConverterGatherer/img/rule2.png"
-          /></a>
-        </div>
-        <div class="swiper-slide" id="weight">
-          <span class="hdn1">This page is the weight Converter</span>
+            <div class="item" id="box1">
+             <img src="/img/temperautre2.png" alt="">
+            </div>
+          </a>
+          <a href="https://rolandhorvath.github.io/measure/">
+            <div class="item" id="box2">
+              <img src="/img/rule2.png" alt="">
+              <div class="text-block">
+               
+              </div>
+            </div>
+          </a>
           <a href="https://rolandhorvath.github.io/weight/index.html">
-            <img src="/ConverterGatherer/img/weight2.png" />
+            <div class="item" id="box3">
+              <img src="/img/weight2.png" alt="">
+              <div class="text-block">
+               
+              </div>
+            </div>
           </a>
-        </div>
-        <div class="swiper-slide" id="binary">
-          <span class="hdn1">This page is the number system Converter</span>
           <a href="https://remus1998.github.io/kincso-grafika/index.html">
-            <img src="/ConverterGatherer/img/binary2.png" />
+            <div class="item" id="box4">
+              <img src="/img/binary2.png" alt="">
+              <div class="text-block">
+             
+              </div>
+            </div>
           </a>
+          <a href="https://katonatamas99.github.io/calendar/" target="_blank"> 
+            <div class="item" id="box5">
+              <img src="/img/calendar.jpg" alt="">
+              <div class="text-block">
+               
+              </div>
+            </div>
+          </a>
+          <a href="https://katonatamas99.github.io/timeapplet2/"target="_blank"> 
+            <div class="item" id="box6">
+              <img src="/img/time.jpg" alt="">
+              <div class="text-block">
+             
+              </div>
+            </div>
+          </a>   
         </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
+  
   </body>
 </html>
